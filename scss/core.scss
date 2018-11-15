@@ -2,6 +2,12 @@
 Main SCSS file / Fresh
 ========================================================================== */
 
+// Icons
+@import 'css/icons.css';
+
+// Bulma
+@import 'bulma/bulma';
+
 //Imports
 @import 'partials/colors';
 @import 'partials/navbar';
