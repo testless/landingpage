@@ -45,8 +45,8 @@ gulp.task('clean', function() {
 // Copy Bulma filed into Bulma development folder
 gulp.task('setupBulma', function() {
     //Get Bulma from node modules
-    gulp.src([nodepath + 'bulma/*.sass']).pipe(gulp.dest('bulma/'));
-    gulp.src([nodepath + 'bulma/**/*.sass']).pipe(gulp.dest('bulma/'));
+    gulp.src([nodepath + 'bulma/*.sass']).pipe(gulp.dest('scss/bulma/'));
+    gulp.src([nodepath + 'bulma/**/*.sass']).pipe(gulp.dest('scss/bulma/'));
 });
 
 // Copy assets
@@ -126,5 +126,5 @@ gulp.task('copy-images', function() {
 });
 
 gulp.task('init', ['setupBulma']);
-gulp.task('build', ['clean','copy','compile-js', 'compile-sass', 'compile-scss', 'compile-html', 'copy-images']);
+gulp.task('build', ['clean','copy','compile-js', 'compile-scss', 'compile-html', 'copy-images']);
 gulp.task('default', ['server', 'watch']);
