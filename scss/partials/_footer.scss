@@ -21,6 +21,11 @@ footer.footer-dark {
             letter-spacing: 1px;
             margin-bottom: 20px;
         }
+        a {
+          color: $light-blue-grey;
+          font-weight: 400;
+          transition: all 0.5s;
+        }
         ul.link-list {
             line-height: 40px;
             font-size: 1.1rem;
