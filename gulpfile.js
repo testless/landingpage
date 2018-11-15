@@ -81,12 +81,11 @@ gulp.task('compile-scss', function () {
         //cssnano(),
     ];
     //Watch me get Sassy
+
     return gulp.src('./scss/core.scss')
-        .pipe(sourcemaps.init())
-        .pipe(sass(sassOptions).on('error', sass.logError))
-        .pipe(postcss(processors))
-        .pipe(sourcemaps.write())
-        .pipe(gulp.dest('./_site/assets/css/'));
+      .pipe(sass(sassOptions).on('error', sass.logError))
+      .pipe(postcss(processors))
+      .pipe(gulp.dest('./_site/assets/css/'));
 });
 
 // Compile Html
