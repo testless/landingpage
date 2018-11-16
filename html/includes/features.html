@@ -1,0 +1,43 @@
+<section id="features" class="section is-medium">
+  <div class="container">
+    <div class="columns">
+      <div class="column is-centered-tablet-portrait">
+        <h1 class="title section-title">You care about quality</h1>
+        <h3 class="subtitle is-4 is-muted">Let testless help</h3>
+        <div class="divider"></div>
+      </div>
+      <div class="column is-8 mt-60">
+      {{#each features}}
+        <!-- icon block -->
+        <article class="media icon-box">
+            <figure class="media-left is-hidden-mobile">
+              <p class="image">
+                <img alt="{{this.title}}" src="assets/images/illustrations/icons/{{this.image}}.svg">
+              </p>
+            </figure>
+            <div class="media-content mt-50">
+              <div class="content">
+                <div class="icon-box-title">
+                  <h3>{{this.title}}</h3>
+                  <img alt="{{this.title}}" class="is-hidden-tablet" src="assets/images/illustrations/icons/{{this.image}}.svg">
+                </div>
+
+                <div class="icon-box-text ">
+                  <ul>
+                    {{#each this.bullets}}
+                    <li>
+                      <i class="fa fa-check"></i>
+                      {{this}}
+                    <li>
+                    {{/each}}
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </article>
+          <!-- /icon block -->
+      {{/each}}
+      </div>
+    </div>
+  </div>
+</section>

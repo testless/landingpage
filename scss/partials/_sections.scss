@@ -59,27 +59,35 @@ Section Styles
 }
 
 //Icon box
-.media.icon-box {
-    border-top: none !important;
-    .media-content .content {
-        .icon-box-title {
-            color: $blue-grey;
-            font-size: 1.2rem;
-            font-weight: 600;
-        }
-        .icon-box-text {
-            color: $title-grey;
-            font-size: 1rem;
-            font-weight: 400;
+.icon-box {
+  border-top: none !important;
+  .media-content {
+    .content {
+      .icon-box-title {
+          color: $blue-grey;
+          font-size: 1.2rem;
+          font-weight: 600;
+      }
+      .icon-box-text {
+          color: $title-grey;
+          font-size: 1rem;
+          font-weight: 400;
 
-            ul {
-              list-style-type: none;
-              margin-left: 0;
+          ul {
+            list-style-type: none;
+            margin-left: 0;
 
-              li:before {
+            li:before {
 
-              }
             }
-        }
+          }
+      }
     }
+  }
+  .mobile-image, .content {
+    img {
+      width: 100px;
+      float: right;
+    }
+  }
 }
