@@ -10,7 +10,7 @@ $(document).ready(function () {
   
 
   function replaceFlage () {
-    const ending = document.hostname ? document.hostname.replace('testless.', '').replace('www.', '') : 'io' || 'io';
+    const ending = document.location.hostname ? document.location.hostname.replace('testless.', '').replace('www.', '') : 'io' || 'io';
     var $box = document.getElementById('lang-select-navbar')
     var $box2 = document.getElementById('lang-select-navbar-clone')
     var $iconMobile = document.getElementById('icon-navbar')
