@@ -37,7 +37,8 @@ module.exports = [{
       'Supports CI/CD tooling via Docker',
       'Outsource automated testing',
       'Tests are synced with Git',
-      'Extendable customizable DSL'
+      'Extendable customizable DSL',
+      'Javascript based'
     ]
   }]
 }]

@@ -5,7 +5,7 @@ module.exports = [{
     name: 'Irma Bradley',
     role: 'Product Owner',
     image: '1',
-    text: 'I care about the user experience first and foremost. Is the feature still working? SEO configured correctly? Now I can actually write the integration tests with no extra effort.'
+    text: 'I care about the user experience first and foremost. Is the feature still working? SEO configured correctly? Now I can actually record the integration tests. No overhead.'
   }, {
     name: 'John Bradley',
     role: 'CTO',
@@ -15,6 +15,6 @@ module.exports = [{
     name: 'Gary Blackman',
     role: 'QA Manager',
     image: '3',
-    text: 'In the past, we had to write &amp; maintain test manually. Tests were flakky. testless is much more reliable and abstract a lot of noise away. We can focus now on what to test, not on the how.'
+    text: 'In the past, we had to write & maintain test manually. Tests were flakky. testless is much more reliable and abstract a lot of noise away. We can focus now on what to test, not on the how.'
   }]
 }]
