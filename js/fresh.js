@@ -7,6 +7,24 @@ $(document).ready(function () {
   //   $('#preloader').delay(350).fadeOut('slow'); // will fade out the white DIV that covers the website.
   //   $('body').delay(350).css({ 'overflow': 'visible' });
   // })
+  
+
+  function replaceFlage () {
+    const ending = document.host ? document.host.replace('testless.', '') : 'io';
+    var $box = document.getElementById('lang-select-navbar')
+    var $box2 = document.getElementById('lang-select-navbar-clone')
+    var $iconMobile = document.getElementById('icon-navbar')
+    var $iconMobile2 = document.getElementById('icon-navbar-clone')
+    var $img = document.querySelector('#lang-select-'+ ending + ' img')
+    $box.innerHTML = $img.outerHTML
+    $box2.innerHTML = $img.outerHTML
+    $iconMobile.innerHTML = $img.outerHTML
+    $iconMobile2.innerHTML = $img.outerHTML
+  }
+
+  replaceFlage()
+
+
 
   var $navbarBurger = $('.navbar-burger')
   var $navbarClone = $('#navbar-clone')

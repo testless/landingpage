@@ -21,7 +21,7 @@ gulp.task('server', ['build'], function(){
 gulp.task('watch', function() {
     gulp.watch('scss/**/*', ['compile-scss', browser.reload]);
     gulp.watch('sass/**/*', ['compile-sass', browser.reload]);
-    gulp.watch('js/**/*', ['copy-js', browser.reload]);
+    gulp.watch('js/**/*', ['compile-js', browser.reload]);
     gulp.watch('html/pages/**/*', ['compile-html']);
     gulp.watch('images/**/*', ['copy-images', browser.reload]);
     gulp.watch(['html/{layouts,includes,helpers,data}/**/*'], ['compile-html:reset','compile-html']);

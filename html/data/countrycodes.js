@@ -1,0 +1,66 @@
+module.exports = [{
+  'name': 'Default',
+  'flag': 'us',
+  'lang': 'en-us',
+  'ending': 'io'
+}, {
+  'name': 'USA',
+  'flag': 'us',
+  'lang': 'en-us',
+  'ending': 'com'
+}, {
+  'name': 'Schweiz',
+  'flag': 'ch',
+  'lang': 'en-us',
+  'ending': 'ch'
+}, {
+  'name': 'Österreich',
+  'flag': 'at',
+  'lang': 'en-us',
+  'ending': 'ch'
+}, {
+  'name': 'Deutschland',
+  'flag': 'de',
+  'lang': 'en-us',
+  'ending': 'de'
+}, {
+  'name': 'Indian',
+  'flag': 'in',
+  'lang': 'en-us',
+  'ending': 'in'
+}, {
+  'name': 'Spain',
+  'flag': 'es',
+  'lang': 'en-us',
+  'ending': 'es'
+}, {
+  'name': 'France',
+  'flag': 'fr',
+  'lang': 'en-us',
+  'ending': 'fr'
+}, {
+  'name': 'Italy',
+  'flag': 'it',
+  'lang': 'en-us',
+  'ending': 'it'
+}, {
+  'name': 'Poland',
+  'flag': 'pl',
+  'lang': 'en-us',
+  'ending': 'pl'
+}, {
+  'name': 'UK',
+  'flag': 'gb',
+  'lang': 'en-us',
+  'ending': 'co.uk'
+}, , {
+  'name': 'Czech Rep.',
+  'flag': 'cz',
+  'lang': 'en-us',
+  'ending': 'cz'
+}, {
+  'name': 'Russia',
+  'flag': 'ru',
+  'lang': 'en-us',
+  'ending': 'ru'
+}]

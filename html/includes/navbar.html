@@ -1,12 +1,12 @@
-<nav class="navbar is-fresh is-transparent no-shadow" role="navigation" aria-label="main navigation">
-    <div class="container">
-        <div class="navbar-brand">
-            <a class="navbar-item" href="https://testless.io">
-                <img src="assets/images/logos/logo.svg" alt="" width="112" height="28">
-                <h2>testless</h2>
-            </a>
-
-            <!-- <a class="navbar-item is-hidden-desktop is-hidden-tablet">
+{{#each navbar}}
+<nav id={{this.id}} class="navbar is-fresh is-transparent {{this.base}}" role="navigation" aria-label="main navigation">
+  <div class="container">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="https://testless.io">
+        <img src="assets/images/logos/logo.svg" alt="" width="112" height="28">
+        <h2>testless</h2>
+      </a>
+      <!-- <a class="navbar-item is-hidden-desktop is-hidden-tablet">
                 <div id="menu-icon-wrapper" class="menu-icon-wrapper" style="visibility: visible;">
                     <svg width="1000px" height="1000px">
                         <path class="path1" d="M 300 400 L 700 400 C 900 400 900 750 600 850 A 400 400 0 0 1 200 200 L 800 800"></path>
@@ -16,17 +16,36 @@
                     <button id="menu-icon-trigger" class="menu-icon-trigger"></button>
                 </div>
             </a>-->
+    <div class="control is-hidden-desktop navbar-item">
+      <p class="control has-icons-left">
+        <span class="select" >
+          <select onchange="location = this.value;" style="width:64px;border:none; padding-left:1.5em;">
+            <div class="navbar-dropdown">
+              {{#each this.countrycodes}}
+              <option value="https://www.testless.{{this.ending}}">
+                {{this.name}}
+              </option>
+              {{/each}}
+            </div>
+          </select>
+        </span>
+        <span id="icon-{{this.id}}" class="is-large is-left icon">
+        </span>
+      </p>
+    </div>
+      <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbar-menu">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
 
-            <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbar-menu">
-                <span aria-hidden="true"></span>
-                <span aria-hidden="true"></span>
-                <span aria-hidden="true"></span>
-            </a>
-        </div>
+    </div>
 
-        <div id="navbar-menu" class="navbar-menu is-static">
 
-            <!-- <div class="navbar-start">
+
+    <div id="navbar-menu" class="navbar-menu {{this.menu}}">
+
+      <!-- <div class="navbar-start">
                 <a class="navbar-item is-hidden-mobile">
                     <div id="menu-icon-wrapper" class="menu-icon-wrapper" style="visibility: visible;">
                         <svg width="1000px" height="1000px">
@@ -38,35 +57,32 @@
                     </div>
                 </a>
             </div> -->
+      <div class="navbar-item has-dropdown is-hoverable is-hidden-mobile">
+        <a id="lang-select-{{this.id}}" class="navbar-link">
+          Language
+        </a>
+        <div class="navbar-dropdown">
+          {{#each this.countrycodes}}
+          <a id="lang-select-{{this.ending}}" href="https://www.testless.{{this.ending}}" class="navbar-item">
+            <img src='/assets/images/flags/4x3/{{this.flag}}.svg' style="height:15px;margin-right:10px;" />
+            {{this.name}} (English)
+          </a>
+          {{/each}}
+        </div>
+      </div>
 
-            <div class="navbar-end">
-                <a href="#pricing" class="navbar-item is-secondary">
-                    Pricing
-                </a>
-                <a href="#features" class="navbar-item is-secondary">
-                    Features
-                </a>
-                <a href="#imprint" class="navbar-item is-secondary">
-                    Imprint
-                </a>
-                <!-- <div class="navbar-item has-dropdown is-hoverable">
-                    <a class="navbar-link">
-                        Dropdown
-                    </a>
+      <div class="navbar-end">
+        <a href="#pricing" class="navbar-item is-secondary">
+          Pricing
+        </a>
+        <a href="#features" class="navbar-item is-secondary">
+          Features
+        </a>
+        <a href="#imprint" class="navbar-item is-secondary">
+          Imprint
+        </a>
 
-                    <div class="navbar-dropdown">
-                        <a class="navbar-item">
-                            Dropdown item
-                        </a>
-                        <a class="navbar-item">
-                            Dropdown item
-                        </a>
-                        <a class="navbar-item">
-                            Dropdown item
-                        </a>
-                    </div>
-                </div>
-                <a href="#" class="navbar-item is-secondary modal-trigger" data-modal="auth-modal">
+        <!--      <a href="#" class="navbar-item is-secondary modal-trigger" data-modal="auth-modal">
                     Log in
                 </a>
                 <a class="navbar-item">
@@ -75,6 +91,7 @@
                     </span>
                 </a>
             </div> -->
-        </div>
+      </div>
     </div>
 </nav>
+{{/each}}
