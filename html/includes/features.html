@@ -1,13 +1,14 @@
+{{#each features}}
 <section id="features" class="section is-medium">
   <div class="container">
     <div class="columns">
       <div class="column is-centered-tablet-portrait">
-        <h1 class="title section-title">You care about quality</h1>
-        <h3 class="subtitle is-4 is-muted">Let testless help</h3>
+        <h1 class="title section-title">{{this.title}}</h1>
+        <h3 class="subtitle is-4 is-muted">{{this.subtitle}}</h3>
         <div class="divider"></div>
       </div>
       <div class="column is-8 mt-60">
-      {{#each features}}
+      {{#each this.list}}
         <!-- icon block -->
         <article class="media icon-box">
             <figure class="media-left is-hidden-mobile">
@@ -41,3 +42,4 @@
     </div>
   </div>
 </section>
+{{/each}}
