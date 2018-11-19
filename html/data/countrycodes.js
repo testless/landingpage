@@ -17,7 +17,7 @@ module.exports = [{
   'name': 'Österreich',
   'flag': 'at',
   'lang': 'en-us',
-  'ending': 'ch'
+  'ending': 'at'
 }, {
   'name': 'Deutschland',
   'flag': 'de',
@@ -63,4 +63,9 @@ module.exports = [{
   'flag': 'ru',
   'lang': 'en-us',
   'ending': 'ru'
+},  {
+  'name': 'China',
+  'flag': 'cn',
+  'lang': 'en-us',
+  'ending': 'cn'
 }]
