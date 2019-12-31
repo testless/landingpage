@@ -1,26 +1,24 @@
 {{#each features}}
-<section class="section is-medium">
-  <div class="container">
-      <div class="is-centered-tablet-portrait">
+<section class="section is-small">
+  <div class="container columns ">
+      <div class="is-centered-tablet-portrait column is-6 is-offset-2 is-offset-3-desktop">
         <h1 class="title section-title">{{this.title}}</h1>
         <h3 class="subtitle is-4 is-muted">{{this.subtitle}}</h3>
         <div class="divider"></div>
       </div>
+    </div>
       <div class="is-centered-tablet-portrait">
       {{#each this.list}}
         {{!-- icon block --}}
-        <article class="media icon-box">
-            <figure class="media-left">
-              <p class="image  is-128x128">
-                <img alt="{{this.title}}" src="assets/images/illustrations/{{this.image}}.svg">
-              </p>
+        <article class="columns icon-box mt-20">
+            <figure class="column is-3 is-offset-2 is-offset-3-desktop">
+                {{svg "images/illustrations/{data}.svg" data=this.image}}
             </figure>
-            <div class="media-content column">
+            <div class="content-column column">
               <div class="content">
                 <div class="icon-box-title">
                   <h3>{{this.title}}</h3>
                 </div>
-
                 <div class="icon-box-text ">
                   <ul>
                     {{#each this.bullets}}

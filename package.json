@@ -1,7 +1,7 @@
 {
   "name": "@testless/www",
   "version": "0.0.1",
-  "main": "Gruntfile.js",
+  "main": "gulpfile.js",
   "devDependencies": {
     "autoprefixer": "^6.3.6",
     "browser-sync": "^2.18.13",
@@ -29,6 +29,7 @@
   "dependencies": {
     "bulma": "0.7",
     "feather-icons": "^4.7.0",
-    "jquery": "~3"
+    "jquery": "~3",
+    "ltx": "^2.9.2"
   }
 }

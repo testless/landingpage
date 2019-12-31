@@ -9,8 +9,8 @@
           </h1>
           <h2 class="subtitle is-4 is-muted">Software design, consulting &amp; development</h2>
           <p>
-            <a class="button cta rounded primary-btn raised mt-20" href="mailto:hire@testless.com">
-              Give me a call
+            <a class="button cta rounded primary-btn raised mt-20" href="mailto:mail@testless.com">
+              I am interested
             </a>
             {{!--<a class="button cta rounded secondary-btn raised mt-20">
               Subscribe
@@ -18,22 +18,20 @@
           </p>
         </div>
         <div class="column is-5 is-offset-1">
-          <figure class="image is-4by3">
-            <img src="assets/images/illustrations/undraw/startup_life.svg" alt="Startup life">
-          </figure>
+          {{svg "images/illustrations/undraw/startup_life.svg"}}
         </div>
 
       </div>
     </div>
   </div>
-  <div class="hero-foot mb-20">
-    <h2 class="subtitle is-muted">Some of our clients</h2>
-    <div class="">
+  <div class="hero-foot mb-20 container">
+    <h2 class="column is-full subtitle is-muted">Some of our clients</h2>
+    <div class="column is-offset-1">
       <ul>
-        <li><img class="partner-logo" alt="client logo" src="assets/images/logos/clients/douglas.svg"></li>
-        <li><img class="partner-logo" alt="client logo" src="assets/images/logos/clients/ergo.svg"></li>
-        <li><img class="partner-logo" alt="client logo" src="assets/images/logos/clients/jimdo.svg"></li>
-        <li><img class="partner-logo" alt="client logo" src="assets/images/logos/clients/uke.svg"></li>
+        <li>{{svg "images/logos/clients/douglas.svg"}}</li>
+        <li>{{svg  "images/logos/clients/ergo.svg"}}</li>
+        <li>{{svg  "images/logos/clients/jimdo.svg"}}</li>
+        <li>{{svg "images/logos/clients/uke.svg" }}</li>
       </ul>
     </div>
   </div>

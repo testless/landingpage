@@ -13,11 +13,9 @@ module.exports = [{
     title: 'Simplicity',
     image: 'undraw/fast_loading',
     bullets: [
-      'Simple solutions are build faster',
-      'Simple solutions are understood better',
-      'Simple solutions are easier to maintain',
-      'Simple solutions are easier to scale',
-      'Simple solutions are easier to teach',
+      'Simple solutions are not easy, but faster to build',
+      'Better understanding',
+      'Simple solutions are easier to maintain, scale and teach',
     ]
   }, {
     title: 'Beginners mind',
@@ -25,15 +23,23 @@ module.exports = [{
     bullets: [
       'Focus on 10x improvements instead of increments first',
       'What Would This Look Like If It Were Simple?',
-      'Trust your gut feeling, but verify'
+      'Trust your gut feeling, but verify',
+    ]
+  },  {
+    title: 'Focus',
+    image: 'undraw/target',
+    bullets: [
+      'Have few targets',
+      'Be crystal clear on your focus',
+      'Execute relentlessly',
     ]
   }]
 }, {
   title: 'What we offer',
-  subtitle: 'Providing tech solutions',
+  subtitle: 'We provide state of the art tech solutions',
   list: [{
     title: 'Tech consulting & solution design',
-    image: 'icons/laptop-globe',
+    image: 'undraw/business_deal',
     bullets: [
       'Over 20+ software projects',
       'Sensitive to business relevant metrics',
@@ -45,7 +51,7 @@ module.exports = [{
     ]
   }, {
     title: 'Technical project management',
-    image: 'icons/doc-sync',
+    image: 'undraw/creation_process',
     bullets: [
       'Agile project management',
       'Interim CTO for SMB\'s',
@@ -56,7 +62,7 @@ module.exports = [{
     ]
   }, {
     title: 'Cloud & web development',
-    image: 'icons/plug-cloud',
+    image: 'undraw/cloud_hosting',
     bullets: [
       'First grade web experiences',
       'Cloud native, serverless or Kubernetes',
@@ -67,7 +73,7 @@ module.exports = [{
     ]
   }, {
     title: 'Improving speed of software delivery',
-    image: 'icons/mobile-feed',
+    image: 'undraw/good_team',
     bullets: [
       'Consulting small to medium sized teams',
       'Micro service oriented architectures, both for frontends and backends',

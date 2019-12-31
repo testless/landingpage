@@ -61,9 +61,11 @@ Section Styles
 //Icon box
 .icon-box {
   border-top: none !important;
-  figure {
+  svg {
+    max-width: 240px;
+    max-height: 180px;
   }
-  .media-content {
+  .content-column {
     .content {
       .icon-box-title {
           color: $blue-grey;

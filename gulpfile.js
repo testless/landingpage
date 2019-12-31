@@ -1,7 +1,6 @@
 var gulp = require('gulp');
 var clean = require('gulp-clean');
 var sass = require('gulp-sass');
-var sourcemaps = require('gulp-sourcemaps');
 var postcss = require('gulp-postcss');
 var autoprefixer = require('autoprefixer');
 var mq4HoverShim = require('mq4-hover-shim');
@@ -109,8 +108,8 @@ gulp.task('compile-html:reset', function(done) {
 
 // Compile js from node modules
 gulp.task('compile-js', function() {
-    return gulp.src([ 
-        nodepath + 'jquery/dist/jquery.min.js', 
+    return gulp.src([
+        nodepath + 'jquery/dist/jquery.min.js',
         nodepath + 'feather-icons/dist/feather.min.js',
         'js/**/*.js'
     ])

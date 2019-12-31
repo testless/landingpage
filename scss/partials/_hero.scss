@@ -27,16 +27,16 @@ Hero styles
     }
     div {
       text-align: center;
-
       ul {
         display: inline-flex;
         flex-wrap: wrap;
         justify-content: space-evenly;
+        width: 100%;
         li {
           height: 50px;
           max-width: 180px;
 
-          img {
+          img, svg {
             height: 50px;
           }
           margin-top: 20px;
