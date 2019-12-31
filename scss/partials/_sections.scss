@@ -66,6 +66,7 @@ Section Styles
     max-height: 180px;
   }
   .content-column {
+    margin-left: 60px;
     .content {
       .icon-box-title {
           color: $blue-grey;
@@ -80,10 +81,6 @@ Section Styles
           ul {
             list-style-type: none;
             margin-left: 0;
-
-            li:before {
-
-            }
           }
       }
     }
