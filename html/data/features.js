@@ -1,44 +1,49 @@
 module.exports = [{
-  title: 'You care about quality',
-  subtitle: 'Let us help out here',
+  title: 'Services',
+  subtitle: 'What we can provide for you',
   list: [{
-    title: 'Record & replay',
+    title: 'Tech consulting & solution design',
     image: 'laptop-globe',
     bullets: [
-      'Record tests by browsing',
-      'Designed for non-techies',
-      'Human readable tests',
-      'Detect visual differences',
-      'Be alerted in case of changes',
-      'Simply confirm or flag warnings'
+      'Over 20+ software projects',
+      'Sensitive to business relevant metrics',
+      'Experienced with legal requirements',
+      'Within medium and large enterprises',
+      'With a startup mindset',
+      'Focus on time to market',
+      'Good trade offs'
     ]
   }, {
-    title: 'Sync- & versioning',
+    title: 'Technical project management',
     image: 'doc-sync',
     bullets: [
-      'Share tests real time',
-      'Switch versions',
-      'Recover old versions'
+      'Agile project management',
+      'With little overhead',
+      'Delivering on schedule',
+      'Focus on value created per unit of time',
+      'No bullshit approach'
     ]
   }, {
-    title: 'Cloud monitoring',
+    title: 'Cloud & web development',
     image: 'plug-cloud',
     bullets: [
-      'Run tests in the cloud',
-      'All browsers',
-      'Regularly or upon demand',
-      'Monitoring & alerting',
-      'Dashboards'
+      'First grade web experiences',
+      'Cloud native, serverless or Kubernetes',
+      'Delivered by AWS, Google Cloud and many more',
+      'Full services provider',
+      'Including DevOps, Legal, CICD and test automation',
+      'With a strong focus on the JavaScript/NodeJS ecosystem'
     ]
   }, {
-    title: 'Integration',
+    title: 'Improving speed of software delivery',
     image: 'mobile-feed',
     bullets: [
-      'Supports CI/CD tooling via Docker',
-      'Outsource automated testing',
-      'Tests are synced with Git',
-      'Extendable customizable DSL',
-      'Javascript based'
+      'Consulting small to medium sized teams',
+      'Micro service oriented architectures, both for frontends and backends',
+      'Tradeoffs between perfection, quality and speed',
+      'Infiltrating ownership and business mindset',
+      'Focus on commitment and KPI\'s',
+
     ]
   }]
 }]
