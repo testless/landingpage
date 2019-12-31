@@ -1,9 +1,39 @@
 module.exports = [{
-  title: 'Services',
-  subtitle: 'What we can provide for you',
+  title: 'Empowering talent to deliver value',
+  subtitle: 'That\'s why we exist!',
+  list: [{
+    title: 'Transparency',
+    image: 'undraw/finish_line',
+    bullets: [
+      'Transparency enables trust',
+      'Trust enables speed',
+      'Speed enables progress'
+    ]
+  }, {
+    title: 'Simplicity',
+    image: 'undraw/fast_loading',
+    bullets: [
+      'Simple solutions are build faster',
+      'Simple solutions are understood better',
+      'Simple solutions are easier to maintain',
+      'Simple solutions are easier to scale',
+      'Simple solutions are easier to teach',
+    ]
+  }, {
+    title: 'Beginners mind',
+    image: 'undraw/runner_start',
+    bullets: [
+      'Focus on 10x improvements instead of increments first',
+      'What Would This Look Like If It Were Simple?',
+      'Trust your gut feeling, but verify'
+    ]
+  }]
+}, {
+  title: 'What we offer',
+  subtitle: 'Providing tech solutions',
   list: [{
     title: 'Tech consulting & solution design',
-    image: 'laptop-globe',
+    image: 'icons/laptop-globe',
     bullets: [
       'Over 20+ software projects',
       'Sensitive to business relevant metrics',
@@ -15,17 +45,18 @@ module.exports = [{
     ]
   }, {
     title: 'Technical project management',
-    image: 'doc-sync',
+    image: 'icons/doc-sync',
     bullets: [
       'Agile project management',
+      'Interim CTO for SMB\'s',
       'With little overhead',
       'Delivering on schedule',
       'Focus on value created per unit of time',
-      'No bullshit approach'
+      'No-bullshit approach'
     ]
   }, {
     title: 'Cloud & web development',
-    image: 'plug-cloud',
+    image: 'icons/plug-cloud',
     bullets: [
       'First grade web experiences',
       'Cloud native, serverless or Kubernetes',
@@ -36,7 +67,7 @@ module.exports = [{
     ]
   }, {
     title: 'Improving speed of software delivery',
-    image: 'mobile-feed',
+    image: 'icons/mobile-feed',
     bullets: [
       'Consulting small to medium sized teams',
       'Micro service oriented architectures, both for frontends and backends',

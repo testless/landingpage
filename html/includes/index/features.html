@@ -1,26 +1,24 @@
 {{#each features}}
-<section id="services" class="section is-medium">
+<section class="section is-medium">
   <div class="container">
-    <div class="columns">
-      <div class="column is-centered-tablet-portrait">
+      <div class="is-centered-tablet-portrait">
         <h1 class="title section-title">{{this.title}}</h1>
         <h3 class="subtitle is-4 is-muted">{{this.subtitle}}</h3>
         <div class="divider"></div>
       </div>
-      <div class="column is-8 mt-60">
+      <div class="is-centered-tablet-portrait">
       {{#each this.list}}
-        <!-- icon block -->
+        {{!-- icon block --}}
         <article class="media icon-box">
-            <figure class="media-left is-hidden-mobile">
-              <p class="image">
-                <img alt="{{this.title}}" src="assets/images/illustrations/icons/{{this.image}}.svg">
+            <figure class="media-left">
+              <p class="image  is-128x128">
+                <img alt="{{this.title}}" src="assets/images/illustrations/{{this.image}}.svg">
               </p>
             </figure>
-            <div class="media-content mt-50">
+            <div class="media-content column">
               <div class="content">
                 <div class="icon-box-title">
                   <h3>{{this.title}}</h3>
-                  <img alt="{{this.title}}" class="is-hidden-tablet" src="assets/images/illustrations/icons/{{this.image}}.svg">
                 </div>
 
                 <div class="icon-box-text ">
@@ -36,10 +34,9 @@
               </div>
             </div>
           </article>
-          <!-- /icon block -->
+          {{!-- /icon block --}}
       {{/each}}
       </div>
     </div>
-  </div>
 </section>
 {{/each}}
