@@ -1,7 +1,6 @@
 {
-  "name": "fresh-starter",
+  "name": "@testless/www",
   "version": "0.0.1",
-  "description": "Starter bundled with bulma.io",
   "main": "Gruntfile.js",
   "devDependencies": {
     "autoprefixer": "^6.3.6",
