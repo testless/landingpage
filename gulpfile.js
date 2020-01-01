@@ -10,6 +10,14 @@ var panini = require('panini');
 var concat = require('gulp-concat');
 var port = process.env.SERVER_PORT || 8080;
 var nodepath =  'node_modules/';
+const purgecss = require('gulp-purgecss')
+var inlinesource = require('gulp-inline-source');
+
+gulp.task('inlinesource', function () {
+    return gulp.src('./_site/*.html')
+        .pipe(inlinesource())
+        .pipe(gulp.dest('./_site'), {overwrite: true});
+});
 
 // Starts a BrowerSync instance
 gulp.task('server', ['build'], function(){
@@ -84,6 +92,9 @@ gulp.task('compile-scss', function () {
     return gulp.src('./scss/core.scss')
       .pipe(sass(sassOptions).on('error', sass.logError))
       .pipe(postcss(processors))
+      .pipe(purgecss({
+             content: ['_site/*.html']
+      }))
       .pipe(gulp.dest('./_site/assets/css/'));
 });
 
@@ -124,5 +135,5 @@ gulp.task('copy-images', function() {
 });
 
 gulp.task('init', ['setupBulma']);
-gulp.task('build', ['clean','copy','compile-js', 'compile-scss', 'compile-html', 'copy-images']);
+gulp.task('build', ['clean','copy','compile-js', 'compile-html', 'compile-scss', 'copy-images']);
 gulp.task('default', ['server', 'watch']);
