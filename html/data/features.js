@@ -14,7 +14,7 @@ module.exports = [{
     image: 'undraw/fast_loading',
     bullets: [
       'Simple solutions are not easy, but faster to build',
-      'Better understanding',
+      'Simple solutions require a solid understanding',
       'Simple solutions are easier to maintain, scale and teach',
     ]
   }, {
@@ -41,20 +41,16 @@ module.exports = [{
     title: 'Tech consulting & solution design',
     image: 'undraw/business_deal',
     bullets: [
-      'Over 20+ software projects',
       'Sensitive to business relevant metrics',
       'Experienced with legal requirements',
-      'Within medium and large enterprises',
       'With a startup mindset',
-      'Focus on time to market',
-      'Good trade offs'
+      'Focus on time to market'
     ]
   }, {
     title: 'Technical project management',
     image: 'undraw/creation_process',
     bullets: [
       'Agile project management',
-      'Interim CTO for SMB\'s',
       'With little overhead',
       'Delivering on schedule',
       'Focus on value created per unit of time',
@@ -67,16 +63,14 @@ module.exports = [{
       'First grade web experiences',
       'Cloud native, serverless or Kubernetes',
       'Delivered by AWS, Google Cloud and many more',
-      'Full services provider',
-      'Including DevOps, Legal, CICD and test automation',
-      'With a strong focus on the JavaScript/NodeJS ecosystem'
+      'Including DevOps, Legal, CICD and test automation'
     ]
   }, {
     title: 'Improving speed of software delivery',
     image: 'undraw/good_team',
     bullets: [
       'Consulting small to medium sized teams',
-      'Micro service oriented architectures, both for frontends and backends',
+      'Micro service oriented architectures for front and backends',
       'Tradeoffs between perfection, quality and speed',
       'Infiltrating ownership and business mindset',
       'Focus on commitment and KPI\'s',
