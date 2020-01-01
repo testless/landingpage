@@ -43,16 +43,13 @@ module.exports = [{
     bullets: [
       'Sensitive to business relevant metrics',
       'Experienced with legal requirements',
-      'With a startup mindset',
-      'Focus on time to market'
+      'Startup mindset with a focus on time to market'
     ]
   }, {
     title: 'Technical project management',
     image: 'undraw/creation_process',
     bullets: [
-      'Agile project management',
-      'With little overhead',
-      'Delivering on schedule',
+      'Agile project management with little overhead',
       'Focus on value created per unit of time',
       'No-bullshit approach'
     ]
@@ -61,8 +58,8 @@ module.exports = [{
     image: 'undraw/cloud_hosting',
     bullets: [
       'First grade web experiences',
-      'Cloud native, serverless or Kubernetes',
-      'Delivered by AWS, Google Cloud and many more',
+      'Cloud based, serverless or Kubernetes',
+      'Supporting all main cloud providers',
       'Including DevOps, Legal, CICD and test automation'
     ]
   }, {
@@ -73,8 +70,6 @@ module.exports = [{
       'Micro service oriented architectures for front and backends',
       'Tradeoffs between perfection, quality and speed',
       'Infiltrating ownership and business mindset',
-      'Focus on commitment and KPI\'s',
-
     ]
   }]
 }]
