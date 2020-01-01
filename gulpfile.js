@@ -1,5 +1,4 @@
 var gulp = require('gulp');
-var clean = require('gulp-clean');
 var sass = require('gulp-sass');
 var postcss = require('gulp-postcss');
 var autoprefixer = require('autoprefixer');
@@ -11,48 +10,39 @@ var concat = require('gulp-concat');
 var port = process.env.SERVER_PORT || 8080;
 var nodepath =  'node_modules/';
 
-// Starts a BrowerSync instance
-gulp.task('server', ['build'], function(){
-    browser.init({server: './_site', port: port});
-});
+const purgecss = require('gulp-purgecss')
+var inlinesource = require('gulp-inline-source');
 
-// Watch files for changes
-gulp.task('watch', function() {
-    gulp.watch('scss/**/*', ['compile-scss', browser.reload]);
-    gulp.watch('sass/**/*', ['compile-sass', browser.reload]);
-    gulp.watch('js/**/*', ['compile-js', browser.reload]);
-    gulp.watch('html/pages/**/*', ['compile-html']);
-    gulp.watch('images/**/*', ['copy-images', browser.reload]);
-    gulp.watch(['html/{layouts,includes,helpers,data}/**/*'], ['compile-html:reset','compile-html']);
-    gulp.watch(['./src/{layouts,partials,helpers,data}/**/*'], [panini.refresh]);
-});
+
+
+
 
 // Erases the dist folder
-gulp.task('reset', function() {
+const reset =function() {
     rimraf('bulma/*');
     rimraf('scss/*');
     rimraf('assets/css/*');
     rimraf('assets/fonts/*');
     rimraf('images/*');
-});
+};
 
 // Erases the dist folder
-gulp.task('clean', function() {
+const clean =function() {
     rimraf('_site');
-});
+};
 
 // Copy Bulma filed into Bulma development folder
-gulp.task('setupBulma', function() {
+const setupBulma =function() {
     //Get Bulma from node modules
     gulp.src([nodepath + 'bulma/*.sass']).pipe(gulp.dest('scss/bulma/'));
     gulp.src([nodepath + 'bulma/**/*.sass']).pipe(gulp.dest('scss/bulma/'));
-});
+};
 
 // Copy assets
-gulp.task('copy', function() {
+const copy =function() {
     //Copy other external css assets
     gulp.src(['assets/fonts/*']).pipe(gulp.dest('_site/assets/fonts/'));
-});
+};
 
 //Theme Sass variables
 var sassOptions = {
@@ -62,7 +52,7 @@ var sassOptions = {
 };
 
 // Compile Theme Scss
-gulp.task('compile-scss', function () {
+const compile_scss =function () {
     var processors = [
         mq4HoverShim.postprocessorFor({ hoverSelectorPrefix: '.is-true-hover ' }),
         autoprefixer({
@@ -84,11 +74,15 @@ gulp.task('compile-scss', function () {
     return gulp.src('./scss/core.scss')
       .pipe(sass(sassOptions).on('error', sass.logError))
       .pipe(postcss(processors))
+      .pipe(purgecss({
+        content: ['_site/*.html']
+      }))
       .pipe(gulp.dest('./_site/assets/css/'));
-});
+};
+
 
 // Compile Html
-gulp.task('compile-html', function() {
+const compile_html =function() {
     gulp.src('html/pages/**/*.html')
         .pipe(panini({
         root: 'html/pages/',
@@ -97,17 +91,19 @@ gulp.task('compile-html', function() {
         helpers: 'html/helpers/',
         data: 'html/data/'
     }))
-        .pipe(gulp.dest('_site'))
-        .on('finish', browser.reload);
-});
+    .pipe(gulp.dest('_site'))
+    .pipe(inlinesource())
+    .on('finish', browser.reload);
+};
 
-gulp.task('compile-html:reset', function(done) {
+
+const compile_html_reset =function(done) {
     panini.refresh();
     done();
-});
+};
 
 // Compile js from node modules
-gulp.task('compile-js', function() {
+const compile_js =function() {
     return gulp.src([
         nodepath + 'jquery/dist/jquery.min.js',
         nodepath + 'feather-icons/dist/feather.min.js',
@@ -115,14 +111,32 @@ gulp.task('compile-js', function() {
     ])
         .pipe(concat('app.js'))
         .pipe(gulp.dest('./_site/assets/js/'));
-});
+};
 
 //Copy images to production site
-gulp.task('copy-images', function() {
-    gulp.src('images/**/*')
+const copy_images =function() {
+    gulp.src('images/**/*.png')
         .pipe(gulp.dest('./_site/assets/images/'));
+};
+
+const build = gulp.series(clean, copy, compile_js, compile_scss, copy_images, compile_html);
+
+// Starts a BrowerSync instance
+const server =gulp.series(build, function(){
+    browser.init({server: './_site', port: port});
 });
 
-gulp.task('init', ['setupBulma']);
-gulp.task('build', ['clean','copy','compile-js', 'compile-scss', 'compile-html', 'copy-images']);
-gulp.task('default', ['server', 'watch']);
+// Watch files for changes
+const watch =function() {
+    gulp.watch('scss/**/*', gulp.series(compile_scss, browser.reload));
+    gulp.watch('sass/**/*', gulp.series(compile_sass, browser.reload));
+    gulp.watch('js/**/*', gulp.series(compile_js, browser.reload));
+    gulp.watch('html/pages/**/*', compile_html);
+    gulp.watch('images/**/*', gulp.series(copy-images, browser.reload));
+    gulp.watch(['html/{layouts,includes,helpers,data}/**/*'], gulp.series(compile_html_reset,compile_html));
+    gulp.watch(['./src/{layouts,partials,helpers,data}/**/*'], panini.refresh);
+};
+
+exports.init = setupBulma;
+exports.build = build;
+exports.default = gulp.parallel(server, watch);
