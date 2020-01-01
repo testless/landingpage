@@ -1,44 +1,6 @@
-{{#each navbar}}
-<nav id={{this.id}} class="navbar is-fresh is-transparent {{this.base}}" role="navigation" aria-label="main navigation">
-  <div class="container">
-    <div class="navbar-brand">
-      <a class="navbar-item" href="https://testless.io">
-        <img src="assets/images/logos/logo.svg" alt="" width="112" height="28">
-        <span class="brand-name">testless</span>
-      </a>
-      {{!-- <a class="navbar-item is-hidden-desktop is-hidden-tablet">
-                <div id="menu-icon-wrapper" class="menu-icon-wrapper" style="visibility: visible;">
-                    <svg width="1000px" height="1000px">
-                        <path class="path1" d="M 300 400 L 700 400 C 900 400 900 750 600 850 A 400 400 0 0 1 200 200 L 800 800"></path>
-                        <path class="path2" d="M 300 500 L 700 500"></path>
-                        <path class="path3" d="M 700 600 L 300 600 C 100 600 100 200 400 150 A 400 380 0 1 1 200 800 L 800 200"></path>
-                    </svg>
-                    <button id="menu-icon-trigger" class="menu-icon-trigger"></button>
-                </div>
-            </a>--}}
-    {{!--<div class="control is-hidden-desktop navbar-item">
-      <p class="control has-icons-left">
-        <span class="select" >
-          <select onchange="location = this.value;" style="width:64px;border:none; padding-left:1.5em;">
-            <div class="navbar-dropdown">
-              {{#each this.countrycodes}}
-              <option value="https://www.testless.{{this.ending}}">
-                {{this.name}}
-              </option>
-              {{/each}}
-            </div>
-          </select>
-        </span>
-        <span id="icon-{{this.id}}" class="is-large is-left icon">
-        </span>
-      </p>
-    </div> --}}
-      {{!-- <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbar-menu">
-        <span aria-hidden="true"></span>
-        <span aria-hidden="true"></span>
-        <span aria-hidden="true"></span>
-      </a> --}}
-    </div>
-
+<nav class="nav" role="navigation" aria-label="main navigation">
+  <a class="nav-item" href="https://www.testless.com">
+    {{svg "images/logos/logo.svg" }}
+    <span class="brand-name">testless</span>
+  </a>
 </nav>
-{{/each}}

@@ -1,7 +1,7 @@
 {{#each features}}
-<section class="section is-small">
-  <div class="container columns ">
-      <div class="is-centered-tablet-portrait column is-6 is-offset-2 is-offset-3-desktop">
+<section class=" container section is-small">
+  <div class=" columns ">
+      <div class="is-centered-tablet-portrait column is-6 is-offset-1">
         <h1 class="title section-title">{{this.title}}</h1>
         <h3 class="subtitle is-4 is-muted">{{this.subtitle}}</h3>
         <div class="divider"></div>
@@ -11,7 +11,7 @@
       {{#each this.list}}
         {{!-- icon block --}}
         <article class="columns icon-box mt-20">
-            <figure class="column is-3 is-offset-2 is-offset-3-desktop">
+            <figure class="column is-3 is-offset-1 is-offset-2-desktop">
                 {{svg "images/illustrations/{data}.svg" data=this.image}}
             </figure>
             <div class="content-column column">
