@@ -3,6 +3,10 @@ Hero styles
 ========================================================================== */
 
 .hero-body {
+    padding: 0;
+    @media (min-width: 768px) {
+      margin-top: -200px;
+    }
     .title, .subtitle {
         font-family: 'Open Sans', sans-serif;
     }
@@ -20,9 +24,21 @@ Hero styles
     .button.cta  {
       font-size: 26px;
     }
+
+    svg {
+      max-height: 50vH;
+
+      margin-top: -50px;
+
+
+    }
 }
 
 .hero-foot {
+    @media (min-width: 768px) {
+      margin-top: -150px;
+    }
+
     .subtitle {
         text-align: center;
         &.is-muted {
