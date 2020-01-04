@@ -4,7 +4,7 @@ Hero styles
 
 .hero-body {
     padding: 0;
-    @media (min-width: 767px) {
+    @media (min-width: 769px) {
       margin-top: -10em;
     }
     .title, .subtitle {
@@ -35,7 +35,7 @@ Hero styles
 }
 
 .hero-foot {
-    @media (min-width: 767px) {
+    @media (min-width: 769px) {
       margin-top: -5em;
     }
 
