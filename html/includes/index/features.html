@@ -23,8 +23,14 @@
                   <ul>
                     {{#each this.bullets}}
                     <li>
-                      {{this}}
-                    <li>
+                      > {{this}}
+                    </li>
+                    {{/each}}
+                    {{#each this.quotes}}
+                    <li class="quote">
+                      <q>{{this.q}}</q>
+                      <span class="by">{{this.by}}</span>
+                    </li>
                     {{/each}}
                   </ul>
                 </div>

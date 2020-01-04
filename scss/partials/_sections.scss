@@ -81,6 +81,13 @@ Section Styles
           ul {
             list-style-type: none;
             margin-left: 0;
+
+            li.quote {
+              margin-top: 15px;
+              q {
+                font-style: italic;
+              }
+            }
           }
       }
     }
