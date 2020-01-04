@@ -93,7 +93,7 @@ gulp.task('compile-scss', function () {
       .pipe(sass(sassOptions).on('error', sass.logError))
       .pipe(postcss(processors))
       .pipe(purgecss({
-             content: ['_site/*.html']
+             content: ['html/**/*.html']
       }))
       .pipe(gulp.dest('./_site/assets/css/'));
 });
