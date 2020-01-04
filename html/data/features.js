@@ -1,13 +1,13 @@
 module.exports = [{
-  title: 'Empowering talent to deliver value',
-  subtitle: 'That\'s why we exist!',
+  title: 'Empowering tech talent to deliver value',
+  subtitle: 'That\'s what gets our blood pumping!',
   list: [{
     title: 'Transparency',
     image: 'undraw/finish_line',
     bullets: [
       'Transparency enables trust',
       'Trust enables speed',
-      'Speed enables progress'
+      'Speed enables fast iteration and value'
     ]
   }, {
     title: 'Simplicity',
@@ -41,9 +41,9 @@ module.exports = [{
     title: 'Tech consulting & solution design',
     image: 'undraw/business_deal',
     bullets: [
-      'Sensitive to business relevant metrics',
-      'Experienced with legal requirements',
-      'Startup mindset with a focus on time to market'
+      'Business mindset',
+      'Focus on value created for customers',
+      'Focus on time to market'
     ]
   }, {
     title: 'Technical project management',
@@ -57,17 +57,15 @@ module.exports = [{
     title: 'Cloud & web development',
     image: 'undraw/cloud_hosting',
     bullets: [
-      'First grade web experiences',
-      'Cloud based, serverless or Kubernetes',
-      'Supporting all main cloud providers',
-      'Including DevOps, Legal, CICD and test automation'
+      'Top of notch web experiences',
+      'Cloud based, designed for scale',
+      'High end tech stack'
     ]
   }, {
-    title: 'Improving speed of software delivery',
+    title: 'Improving speed',
     image: 'undraw/good_team',
     bullets: [
       'Consulting small to medium sized teams',
-      'Micro service oriented architectures for front and backends',
       'Tradeoffs between perfection, quality and speed',
       'Infiltrating ownership and business mindset',
     ]
