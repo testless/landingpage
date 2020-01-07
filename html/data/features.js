@@ -62,11 +62,6 @@ module.exports = [
               'It’s not the daily increase but daily decrease. Hack away at the unessential.',
             by: 'Bruce Lee',
           },
-          {
-            q:
-              'What factor do you feel has been the most important in getting to where you’ve gotten in life? Buffett immediately replied: Focus. Bill Gates agreed.',
-            by: 'Some dinner in July 1991.',
-          },
         ],
       },
     ],
