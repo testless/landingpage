@@ -30,7 +30,7 @@ module.exports = [
         quotes: [
           {
             q:
-              "That's been one of my mantras - focus and simplicity. Simple can be harder than complex: You have to work hard to get your thinking clean to make it simple.",
+              "...focus and simplicity. Simple can be harder than complex: You have to work hard to get your thinking clean to make it simple.",
             by: 'Steve Jobs',
           },
           { q: 'What would this look like if it were easy?', by: 'Tim Ferris' },
@@ -48,7 +48,7 @@ module.exports = [
           },
           {
             q:
-              'Having a beginner’s mind informs me. I’m trying to listen deeply & the beginner’s mind is informing me to step back, so that I can create what wants to be, not what was. The future does not equal the past.',
+              'Having a beginner’s mind [...] so that I can create what wants to be, not what was. The future does not equal the past.',
             by: 'Marc Benioff',
           },
         ],
@@ -103,7 +103,7 @@ module.exports = [
         ],
       },
       {
-        title: 'Improving speed',
+        title: 'Improved delivery',
         image: 'undraw/good_team',
         bullets: [
           'Consulting small to medium sized teams',
