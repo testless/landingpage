@@ -20,7 +20,7 @@
   },
   "scripts": {
     "start": "gulp",
-    "build": "gulp build && gulp inlinesource"
+    "build": "gulp build && gulp inlinesource && cp profile.pdf _site/profile.pdf"
   },
   "author": "Marc Palm",
   "license": "MIT",
