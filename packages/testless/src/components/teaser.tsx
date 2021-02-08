@@ -19,7 +19,7 @@ const title = [
 ];
 
 const claim = [
-  `The easiest solutions are often the most sophisticated one.`,
+  `Simplicty is the ultimate sophistication. The simplest solution is often the most sophisticated one.`,
   `Get everything you need to build a website without any technical knowledge.`,
   `A full-featured, lightweight and extensible content management system built on top of the Github API.`,
 ];
@@ -27,9 +27,9 @@ const claim = [
 const boxes = [
   {
     icon: OrganizationIcon,
-    title: `A company you can rely on.`,
+    title: `Rely on us`,
     body: `
-    We only support project where we can truly build value and commit long term.
+    We only support projects where we can truly build value and commit long term.
   `,
   },
   {
@@ -55,7 +55,7 @@ const boxes = [
   },
   {
     icon: RocketIcon,
-    title: `Ship timely`,
+    title: `Ship in time`,
     body: `Before not delivering on a deadline, staff up your teams instantly.`,
   },
   {

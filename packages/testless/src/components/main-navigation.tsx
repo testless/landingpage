@@ -42,13 +42,13 @@ export const MainNavigation: React.FC<{ variant?: '1' | '2' | '3' }> = ({
         </li>
       </ul>
       <div className="ml-auto lg:hidden">
-        <button
+        {/* <button
           aria-label="Open Menu"
           title="Open Menu"
           className="p-2 -mr-1 transition duration-200 rounded focus:outline-none focus:shadow-outline hover:bg-deep-purple-50 focus:bg-deep-purple-50"
         >
           <MenuSVG />
-        </button>
+        </button> */}
       </div>
     </div>
   </div>

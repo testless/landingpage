@@ -91,7 +91,7 @@ export const Pricing: React.FC<{
             Hire now
           </CustomLink>
           <p className="max-w-xs mt-6 text-xs text-gray-700 sm:text-sm sm:text-center sm:max-w-sm sm:mx-auto">
-            Receive a EU-VAT invoice &amp; sign the paperwork. We precharge.
+            Receive a EU-VAT invoice &amp; sign the paperwork.
           </p>
         </div>
       </div>
