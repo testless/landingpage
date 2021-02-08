@@ -9,16 +9,17 @@ import {
   VersionsIcon,
 } from '@primer/octicons-react';
 import React from 'react';
+import { CustomLink } from 'src/links';
 
 const title = [
   `Build a modern website with no coding required.`,
-  `Easy, simple, powerful - a CMS build for Git.`,
+  `Software engineering as a service.`,
   `The most powerful CMS for your Github projects.`,
   `Build, host and collaborate on websites.`,
 ];
 
 const claim = [
-  `Gitlify is the easiest way to create and manage your content across teams in one place.`,
+  `The easiest solutions are often the most sophisticated one.`,
   `Get everything you need to build a website without any technical knowledge.`,
   `A full-featured, lightweight and extensible content management system built on top of the Github API.`,
 ];
@@ -26,124 +27,56 @@ const claim = [
 const boxes = [
   {
     icon: OrganizationIcon,
-    title: `Collaborate seamlessly across team.`,
+    title: `A company you can rely on.`,
     body: `
-    Create, translate and update content via intuitive forms & lists. Everything is submitted as a PR. No communication overhead.
+    We only support project where we can truly build value and commit long term.
   `,
-    additionalInfo: `
-    Also developers can edit data with their editors directly. They don't have to learn another tool and switch context.
-    `,
   },
   {
     icon: HistoryIcon,
-    title: `Preserve reliably your history`,
+    title: `Save time`,
     body: `
-      Never loose content again. Go back to old versions. See how your content has changed over the process.
-    `,
-    additionalInfo: `
-      It comes handy if you want to revert. Maybe previous content was converting better, a feature had bugs, etc.
+      Don't search for hours when you need an engineer for two weeks or a smaller subproject.
     `,
   },
   {
     icon: FlameIcon,
-    title: `Save rollback  in emergencies`,
+    title: `Battle tested engineers`,
     body: `
-    Relying on stored data in indepedent 3rd party systems makes build not reproducible.
-    Rollbacks might fail, builds might break.
-  `,
-    additionalInfo: `
-    All data is stored in your repository. No dependency from Gitlify. More reliable, safe, and transparent.
+    Our engineers have worked in highly regulated industries and fast scaling startups.
   `,
   },
   {
     icon: SyncIcon,
-    title: `Be always in sync with source code`,
+    title: `Iterate and scale`,
     body: `
-      Code and content are in one place. Developers do not need to change tools. No cost of context switching.
-    `,
-    additionalInfo: `
-      All data is committed. Type safe. More fous, more features. More productivity, faster growth.
-    `,
+      Scaling teams up and down with easy to onboard engineers makes you invincible.
+    `
   },
   {
     icon: RocketIcon,
-    title: `Ship instanly upon changes`,
-    body: `
-      Your dev team can react flexible on your changes - update pages, translation packages, legal pages.
-      `,
-    additionalInfo: `
-      Modern CICD pipeline can do almost everything. Ship continuously and amaze your customers.
-      `,
+    title: `Ship timely`,
+    body: `Before not delivering on a deadline, staff up your teams instantly.`,
   },
   {
     icon: VersionsIcon,
-    title: `Resolve conflicts selectively`,
+    title: `Less paperwork`,
     body: `
-      In the rare case, that several colleagues have worked on the same data, you can always cherry pick what you like best.
+      We have easy to understand contracts or use yours. You simply order man power and keep the code & IP.
       `,
-    additionalInfo: `Happens very rarely, but can not be avoided in growing organizations. Then it is nice to have a tool.`,
   },
   {
     icon: LawIcon,
-    title: `Less overhead, more compliance`,
+    title: `Low overhead`,
     body: `
-      Every third party persisting data creates an overhead and a weak link - reliability, security, compliance issues arise.
+      Don't manage staff, hire it on a timely basis like you would additional software and infrastructure.
       `,
-    additionalInfo: `Giltify persist data in your repo, not in its own backends. This makes it very easy.`,
   },
   {
-    title: `Automate any workflow`,
-    body: `
-      Gitlify CMS allows any kind of data to be received: bug tickets, todo list, features, documentation. Rigid but flexible datatypes.
-      `,
-    additionalInfo: `With the rise of more powerful CICD, your creativity and flexibility - the sky is the limit. We are exicted to see what your engineers dream up.`,
-  },
-
-  {
-    title: `Content marketing made easy.`,
-    body: `
-    Have an entire team
-    participate in creating content for you blog through Github PRs! You
-    can also have multiple contributors per article, where each
-    contributor only needs write access to their own PR-branch.
-  `,
-  },
-  {
-    title: `CMS for everyone.`,
-    body: `
-  Gitlify is the first web content management
-  system that runs completely in your git repository,
-  so anyone can contribute content directly via pull requests.
-  `,
-  },
-  {
-    title: `Web development simplified.`,
-    body: `
-    Designers and non-technical users can work together with
-    developers to create great looking websites with ease using
-    our intuitive UI powered by ReactJS + Redux
-    framework & Material design components
-  `,
-  },
-  {
-    title: `The best way to collaborate with others online.`,
-    body: `
-    Gitlify is a great way to enable collaboration between departments like marketing,
-    sales and product development.
-    Receive translations, data or content from other teams via pull requests.
-    It&#39s easy to use too! Head over to gitlify.com/demo/... for a demo.
-  `,
-  },
-  {
-    title: `Create beautiful websites without writing code.`,
-    body: `
-  In just minutes you can have a fully functional website
-  that looks amazing using Gitlify and flexible templating engine.
-  You don't need any coding skills either! Simply pick one of our 30+ themes
-  in our template gallery or start creating your own theme by combining
-  elements from different templates.
-  `,
-    link: ``,
+    title: `Instant support`,
+    body: `We usually can present you an offer within one day a couple of engineers within a 3 days period.`,
+    additionalInfo: null,
+    link: null
   },
 ];
 
@@ -201,13 +134,12 @@ export const Teaser: React.FC<{
                 <p className="mb-2 text-sm text-gray-500">{additionalInfo}</p>
               )}
               {link && (
-                <a
-                  href={link}
-                  aria-label=""
+                <CustomLink
+                  name={link}
                   className="mt-1 inline-flex items-center font-semibold text-indigo-500 transition-colors duration-200 hover:text-indigo-500"
                 >
                   Learn more
-                </a>
+                </CustomLink>
               )}
             </div>
           </div>

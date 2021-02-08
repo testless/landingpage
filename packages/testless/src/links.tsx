@@ -27,9 +27,8 @@ export const links = {
     href: `/legal/cookie-policy/`,
   },
   signup: {
-    name: `Try for free`,
-    href: `https://wizard.gitlify.com/cms/`,
-    icon: MarkGithubIcon,
+    name: `Let's chat`,
+    href: `https://calendly.com/testless/30min`,
   },
   login: {
     name: `Login`,

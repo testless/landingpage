@@ -1,24 +1,18 @@
 import React from 'react';
+import { CustomLink } from 'src/links';
 
 const claim = [
-  `Collaborate without friction.`,
+  `Instant support.`,
   `Your Github Repository as a CMS`,
   `Get your content and source code in sync with Gitlify.`,
 ];
 
 const body = [
   `
-  Gitlify offers your company the ability to easily integrate a CMS into
-  every department in your organization and enable everyone to
-  collaborate on content. It uses Github as data source, but doesn't
-  require any code knowledge from the people who use it—even if they're
-  not developers.
+  Outsource full projects or hire us on a hourly basis
   `,
   `
-  Gitlify enables you to create content and deliver data from all
-  departments via pull requests. You can use your existing
-  infrastructure for hosting, so no additional costs or maintenance is
-  required.
+    We can offer either a full project or an on-demand service to suit your needs. Simply let us know how we can help and our team will be in touch soon.
   `,
   `
   Gitlify enables you to get all of your organization&#39s content,
@@ -51,79 +45,78 @@ export const Pricing: React.FC<{
         <div className="text-center">
           <div className="text-lg font-semibold">Free</div>
           <div className="flex items-center justify-center mt-2">
-            <div className="mr-1 text-5xl font-bold">0 $</div>
+            <div className="mr-1 text-5xl font-bold">0 €</div>
           </div>
           <div className="mt-2 space-y-3">
-            <div className="text-gray-700">Personal accounts</div>
-            <div className="text-gray-700">Open source</div>
-            <div className="text-gray-700">Non profit orgs</div>
+            <div className="text-gray-700">30 min call</div>
+            <div className="text-gray-700">Free estimate</div>
+            <div className="text-gray-700">Budget &amp; time</div>
           </div>
         </div>
         <div>
-          <a
-            href="file:///"
+          <CustomLink
+            name="signup"
             className="inline-flex items-center justify-center w-full h-12 px-6 mt-6 font-medium tracking-wide text-white transition duration-200 bg-gray-800 rounded shadow-md hover:bg-gray-900 focus:shadow-outline focus:outline-none"
           >
-            Start for free
-          </a>
+            Set up call
+          </CustomLink>
           <p className="max-w-xs mt-6 text-xs text-gray-700 sm:text-sm sm:text-center sm:max-w-sm sm:mx-auto">
-            We love open source. Our product is free for public or personal
-            repos.
+            We are exited to hear what you want to build.
           </p>
         </div>
       </div>
       <div className="relative flex flex-col justify-between p-8 transition-shadow duration-300 bg-white border rounded shadow-sm sm:items-center hover:shadow border-deep-purple-accent-400">
         <div className="absolute inset-x-0 top-0 flex justify-center -mt-3">
           <div className="inline-block px-3 py-1 text-xs font-medium tracking-wider text-white uppercase rounded bg-indigo-500">
-            Early bird
+            Fastest option
           </div>
         </div>
         <div className="text-center">
-          <div className="text-lg font-semibold">Business</div>
+          <div className="text-lg font-semibold">Instant &amp; audacious</div>
           <div className="flex items-center justify-center mt-2">
-            <div className="mr-1 text-5xl font-bold">$ 7</div>
-            <div className="text-gray-700">/ mo / seat *</div>
+            <div className="mr-1 text-5xl font-bold">200 €</div>
+            <div className="text-gray-700">/ hour</div>
           </div>
           <div className="mt-2 space-y-3">
-            <div className="text-gray-700">Private repositories</div>
-            <div className="text-gray-700">Organization accounts</div>
-            <div className="text-gray-700">Free 30-days trial</div>
+            <div className="text-gray-700">Senior consultant</div>
+            <div className="text-gray-700">Immediate start</div>
+            <div className="text-gray-700">Quickly onboarded</div>
           </div>
         </div>
         <div>
-          <a
-            href="file:///"
+        <CustomLink
+            name="signup"
             className="inline-flex items-center justify-center w-full h-12 px-6 mt-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md bg-indigo-500 hover:bg-indigo-500 focus:shadow-outline focus:outline-none"
           >
-            Try for free
-          </a>
+            Hire now
+          </CustomLink>
           <p className="max-w-xs mt-6 text-xs text-gray-700 sm:text-sm sm:text-center sm:max-w-sm sm:mx-auto">
-            * Charged yearly. Seats are transferrable.
+            Receive a EU-VAT invoice &amp; sign the paperwork. We precharge.
           </p>
         </div>
       </div>
       <div className="flex flex-col justify-between p-8 transition-shadow duration-300 bg-white border rounded shadow-sm sm:items-center hover:shadow">
         <div className="text-center">
-          <div className="text-lg font-semibold">Consulting</div>
+          <div className="text-lg font-semibold">Entreprise</div>
           <div className="flex items-center justify-center mt-2">
-            <div className="mr-1 text-5xl font-bold">$42</div>
-            <div className="text-gray-700">/ 15 min</div>
+            <div className="mr-1 text-5xl font-bold">150 €</div>
+            <div className="text-gray-700">/ hour</div>
           </div>
           <div className="mt-2 space-y-3">
-            <div className="text-gray-700">Custom features</div>
-            <div className="text-gray-700">Integration or onboarding</div>
-            <div className="text-gray-700">Full CMS solutions</div>
+            <div className="text-gray-700">200+ hours?</div>
+            <div className="text-gray-700">Full service?</div>
+            <div className="text-gray-700">Outsourcing?</div>
           </div>
         </div>
         <div>
-          <a
-            href="file:///"
+          <CustomLink
+            name="signup"
             className="inline-flex items-center justify-center w-full h-12 px-6 mt-6 font-medium tracking-wide text-white transition duration-200 bg-gray-800 rounded shadow-md hover:bg-gray-900 focus:shadow-outline focus:outline-none"
           >
-            Book call
-          </a>
+            Book a call
+          </CustomLink>
           <p className="max-w-xs mt-6 text-xs text-gray-700 sm:text-sm sm:text-center sm:max-w-sm sm:mx-auto">
-            If you need a custom solution, request a short call.
+            If you have a large project, let's jump on a call.
           </p>
         </div>
       </div>

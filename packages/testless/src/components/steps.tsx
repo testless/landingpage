@@ -22,20 +22,20 @@ A CMS build on top of the Github API. Enabling frictionless
 
 const steps = [
   {
-    title: `Prepare repository`,
-    body: `Developers add the folder ".gitlify". They define the data structure they need with JSON format. The Giltlify Wizard helps them here.`,
+    title: `Set up a call`,
+    body: `We discuss the details with you in a short call and see how we can help you. Our salesforce is tech affine.`,
   },
   {
-    title: `Invite collaborators`,
-    body: `Developers add collaborators to their repo with write rights. Currently Gitlify requires a Github login, but not necessary a paid one within you org.`,
+    title: `We make you an offer`,
+    body: `Depending on your requirements, we present what we can offer you in terms of man power, time commitments and scope.`,
   },
   {
-    title: `Create and edit data`,
-    body: `Collaborators signin with Github and can start creating, copying and editing. Every editor has its own session, so nobody overwrites content.`,
+    title: `Engineers jump on a call`,
+    body: `It is usually best if the tech or product people have a direct conversation. Let's see whether it is a cultural fit.`,
   },
   {
-    title: `Publish their changes`,
-    body: `When starting editing, we create a branch in the background. Once the editor hits publish, a PR with all his changes is opened.`,
+    title: `Try us for one week`,
+    body: `You don't have to commit for the full term but only for the first 5 days at the negiotated rate.`,
   },
 ];
 

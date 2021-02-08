@@ -1,0 +1,18 @@
+{
+    "name": "@gitlify/logo",
+    "version": "1.0.0",
+    "main": "favicon.js",
+    "license": "UNLICENSED",
+    "devDependencies": {
+        "favicons": "^6.2.0",
+        "icon-gen": "^2.0.0"
+    },
+    "scripts": {
+        "clean": "rm -rf ./static/assets/icons",
+        "prebuild": "mkdir -p ./static/assets/icons",
+        "build": "node_modules/.bin/icon-gen -i ./logo.svg -o ./static/assets/icons --ico --favicon ico=16,32,64,128,256 name=favicon- sizes=512 && node favicons.js",
+        "postbuild": "mv static/assets/icons/favicon.ico static/assets/favicon.ico",
+        "copy:page": "cp -R static/ ../testless/static && cp logo.svg ../testless/src && cp logo.svg ../testless/src/images",
+        "copy": "yarn copy:page"
+    }
+}

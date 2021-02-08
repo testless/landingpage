@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: 'Gitlify',
-    description: 'Collaborate like never before',
-    author: 'Gitlify',
+    title: 'Testless',
+    description: 'Hire top IT talent',
+    author: 'Testless GmbH',
   },
   plugins: [
     'gatsby-plugin-postcss',

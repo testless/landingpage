@@ -7,7 +7,7 @@ import clsx from 'clsx';
 
 const Name: React.FC<{ className?: string }> = ({ className }) => (
   <Link className={clsx('gf__logo__bn gf__logo__bn--header', className)} to="/">
-    gitlify
+    testless
   </Link>
 );
 

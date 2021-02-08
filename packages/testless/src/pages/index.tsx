@@ -10,7 +10,7 @@ import { links } from 'src/links';
 
 const Index = () => (
   <React.Fragment>
-    <MainNavigation variant="2" />
+    <MainNavigation  />
     <Hero variant="1" titleVariant={2} />
     <Teaser
       id={links.features.id}
@@ -26,7 +26,7 @@ const Index = () => (
     />
     <Steps />
     <Pricing id={links.pricing.id} claimVariant={0} bodyVariant={0} />
-    <Footer claimVariant={0} />
+    <Footer  />
   </React.Fragment>
 );
 

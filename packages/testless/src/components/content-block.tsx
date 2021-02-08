@@ -5,48 +5,24 @@ import image2 from 'src/images/pexels-photo-3182812.jpeg';
 import image3 from 'src/images/pexels-photo-3182739.jpeg';
 
 const title = [
-  `Bring your content together.`,
-  `Gitlify`,
-  `The only CMS that makes you feel like a Github power user.`,
+  `Smart and agile software engineering`
 ];
 
 const body = [
   `
-  Gitlify makes it easy to bring all of your company’s web assets
-  under one roof and manage them from a single location. Your entire
-  team can work in the same space, collaboratively building products
-  with low friction collaboration across teams.
+  Cloud-native software engineering within modern microservice architectures - either based on serverless, Docker, or Kubernetes.
+  With a strong bias towards simple, low overhead, sustainable and scalable IT solutions.
+  In time and in budget. Prioritized according to Pareto. Consulting where necessary.
+  You win, we win.
   `,
   `
-  Collaboration made easy.
-  Gitlify provides a hassle-free way of interacting with Github for non-developers.
-  We’ve adressed the core issue we encountered in our own client projects with Gitlify.
-  Our experiences stem from thousands of hours working on apps, products, shops, and website.
-  They range from startups to large multi billion cooperations.
-  We want to make sure everybody can stay productive. Without stress.
-  Even with lean resources and constantly changing, demanding requirements.
-  `,
-  `
-  Collaboration made easy. The Github API is a powerful and robust
-  resource, we just make it easier to use it for content creation.
-  Gitlify provides a hassle-free way of using the Github API in your
-  own CMS (or any other software). We’ve built the best features
-  from our own experience working with static site generators like
-  Jekyll and Hugo into Gitlify, making sure you can stay productive
-  while staying lean on resources.
-  `,
-  `
-  Gitlify enables frictionless collaboration between developers,
-  designers and content creators. The CMS is build on top of the
-  Github API to ensure full data integration with your existing
-  tools and processes.
-  `,
+  We are known for delivering in time and budget with expertise in different types of software engineering such as cloud-native solutions within modern microservice architectures - either based on serverless, Docker, or Kubernetes.`
 ];
 
 const ctaLabel = [
-  `Sign up for free trial now!`,
-  `Try Gitlify now or visit our demo page.`,
-  `Learn more.`,
+  `Contact us now`,
+  `Hire us now`,
+  `Let's talk`,
 ];
 
 const ImageBlock = () => (

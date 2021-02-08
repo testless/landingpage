@@ -19,8 +19,8 @@ const MenuSVG = () => (
   </svg>
 );
 
-export const MainNavigation: React.FC<{ variant: '1' | '2' | '3' }> = ({
-  variant,
+export const MainNavigation: React.FC<{ variant?: '1' | '2' | '3' }> = ({
+  variant = '2',
 }) => (
   <div className="px-4 py-5 mx-auto w-full md:px-24 lg:px-8 bg-gray-200">
     <div className="relative flex grid items-center max-w-6xl grid-cols-2 mx-auto lg:grid-cols-3">
