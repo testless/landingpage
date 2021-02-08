@@ -46,7 +46,7 @@ export const links = {
     id: `how_it_works`,
   },
   features: {
-    name: `Features`,
+    name: `Why us?`,
     href: '/',
     id: `features`,
   },

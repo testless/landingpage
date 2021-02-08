@@ -38,9 +38,6 @@ export const MainNavigation: React.FC<{ variant?: '1' | '2' | '3' }> = ({
       <Logo />
       <ul className="flex items-center hidden ml-auto space-x-8 lg:flex">
         <li>
-          <CustomLink name="login" />
-        </li>
-        <li>
           <CustomLink name="signup" btnColor="primary" />
         </li>
       </ul>
