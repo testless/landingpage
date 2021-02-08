@@ -1,0 +1,132 @@
+import React from 'react';
+
+const claim = [
+  `Collaborate without friction.`,
+  `Your Github Repository as a CMS`,
+  `Get your content and source code in sync with Gitlify.`,
+];
+
+const body = [
+  `
+  Gitlify offers your company the ability to easily integrate a CMS into
+  every department in your organization and enable everyone to
+  collaborate on content. It uses Github as data source, but doesn't
+  require any code knowledge from the people who use it—even if they're
+  not developers.
+  `,
+  `
+  Gitlify enables you to create content and deliver data from all
+  departments via pull requests. You can use your existing
+  infrastructure for hosting, so no additional costs or maintenance is
+  required.
+  `,
+  `
+  Gitlify enables you to get all of your organization&#39s content,
+  translations and data from all departments into one repository.
+  `,
+];
+
+export const Pricing: React.FC<{
+  claimVariant: 0 | 1 | 2;
+  bodyVariant: 0 | 1 | 2;
+  id?: string;
+}> = ({ claimVariant, bodyVariant, id }) => (
+  <div
+    id={id}
+    className="px-4 py-16 mx-auto md:px-24 lg:px-8 lg:py-20 w-full bg-white"
+  >
+    <div className="max-w-xl mb-10 md:mx-auto sm:text-center lg:max-w-2xl md:mb-12">
+      <div>
+        <p className="inline-block px-3 py-px mb-4 text-xs font-semibold tracking-wider text-teal-900 uppercase rounded-full bg-indigo-500">
+          Our Pricing
+        </p>
+      </div>
+      <h2 className="max-w-lg mb-6 font-sans text-3xl font-bold leading-none tracking-tight text-gray-900 sm:text-4xl md:mx-auto">
+        {claim[claimVariant]}
+      </h2>
+      <p className="text-base text-gray-700 md:text-lg">{body[bodyVariant]}</p>
+    </div>
+    <div className="grid max-w-md gap-10 row-gap-5 lg:max-w-screen-lg sm:row-gap-10 lg:grid-cols-3 xl:max-w-screen-lg sm:mx-auto">
+      <div className="flex flex-col justify-between p-8 transition-shadow duration-300 bg-white border rounded shadow-sm sm:items-center hover:shadow">
+        <div className="text-center">
+          <div className="text-lg font-semibold">Free</div>
+          <div className="flex items-center justify-center mt-2">
+            <div className="mr-1 text-5xl font-bold">0 $</div>
+          </div>
+          <div className="mt-2 space-y-3">
+            <div className="text-gray-700">Personal accounts</div>
+            <div className="text-gray-700">Open source</div>
+            <div className="text-gray-700">Non profit orgs</div>
+          </div>
+        </div>
+        <div>
+          <a
+            href="file:///"
+            className="inline-flex items-center justify-center w-full h-12 px-6 mt-6 font-medium tracking-wide text-white transition duration-200 bg-gray-800 rounded shadow-md hover:bg-gray-900 focus:shadow-outline focus:outline-none"
+          >
+            Start for free
+          </a>
+          <p className="max-w-xs mt-6 text-xs text-gray-700 sm:text-sm sm:text-center sm:max-w-sm sm:mx-auto">
+            We love open source. Our product is free for public or personal
+            repos.
+          </p>
+        </div>
+      </div>
+      <div className="relative flex flex-col justify-between p-8 transition-shadow duration-300 bg-white border rounded shadow-sm sm:items-center hover:shadow border-deep-purple-accent-400">
+        <div className="absolute inset-x-0 top-0 flex justify-center -mt-3">
+          <div className="inline-block px-3 py-1 text-xs font-medium tracking-wider text-white uppercase rounded bg-indigo-500">
+            Early bird
+          </div>
+        </div>
+        <div className="text-center">
+          <div className="text-lg font-semibold">Business</div>
+          <div className="flex items-center justify-center mt-2">
+            <div className="mr-1 text-5xl font-bold">$ 7</div>
+            <div className="text-gray-700">/ mo / seat *</div>
+          </div>
+          <div className="mt-2 space-y-3">
+            <div className="text-gray-700">Private repositories</div>
+            <div className="text-gray-700">Organization accounts</div>
+            <div className="text-gray-700">Free 30-days trial</div>
+          </div>
+        </div>
+        <div>
+          <a
+            href="file:///"
+            className="inline-flex items-center justify-center w-full h-12 px-6 mt-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md bg-indigo-500 hover:bg-indigo-500 focus:shadow-outline focus:outline-none"
+          >
+            Try for free
+          </a>
+          <p className="max-w-xs mt-6 text-xs text-gray-700 sm:text-sm sm:text-center sm:max-w-sm sm:mx-auto">
+            * Charged yearly. Seats are transferrable.
+          </p>
+        </div>
+      </div>
+      <div className="flex flex-col justify-between p-8 transition-shadow duration-300 bg-white border rounded shadow-sm sm:items-center hover:shadow">
+        <div className="text-center">
+          <div className="text-lg font-semibold">Consulting</div>
+          <div className="flex items-center justify-center mt-2">
+            <div className="mr-1 text-5xl font-bold">$42</div>
+            <div className="text-gray-700">/ 15 min</div>
+          </div>
+          <div className="mt-2 space-y-3">
+            <div className="text-gray-700">Custom features</div>
+            <div className="text-gray-700">Integration or onboarding</div>
+            <div className="text-gray-700">Full CMS solutions</div>
+          </div>
+        </div>
+        <div>
+          <a
+            href="file:///"
+            className="inline-flex items-center justify-center w-full h-12 px-6 mt-6 font-medium tracking-wide text-white transition duration-200 bg-gray-800 rounded shadow-md hover:bg-gray-900 focus:shadow-outline focus:outline-none"
+          >
+            Book call
+          </a>
+          <p className="max-w-xs mt-6 text-xs text-gray-700 sm:text-sm sm:text-center sm:max-w-sm sm:mx-auto">
+            If you need a custom solution, request a short call.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+);

@@ -1,0 +1,11 @@
+/* purgecss start ignore */
+@tailwind base;
+
+/* Most of your custom classes and styles should go right down here ⬇️
+   (Things like @font-face declarations, styles for `h1`, `p`, etc.)
+*/
+
+/* purgecss end ignore */
+@tailwind components;
+
+@tailwind utilities;

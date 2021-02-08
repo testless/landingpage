@@ -1,0 +1,32 @@
+.gf__logo a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.gf__logo svg {
+  display: flex;
+  height: 100%;
+  width: 25px;
+}
+
+.gf__logo__bn {
+  font-weight: 900;
+  font-size: 1em;
+  font-family: 'Monospace', sans-serif;
+  line-height: 1.5em;
+  margin-left: 0.75em;
+  letter-spacing: 0.5em;
+  text-transform: uppercase;
+}
+
+@media (max-width: 480px) {
+  .gf__logo__bn {
+    font-size: 0.8em;
+    margin-left: 1em;
+    line-height: 2.2em;
+  }
+}
+
+
+
+
