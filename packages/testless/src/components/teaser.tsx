@@ -62,19 +62,19 @@ const boxes = [
     icon: VersionsIcon,
     title: `Less paperwork`,
     body: `
-      We have easy to understand contracts or use yours. You simply order man power and keep the code & IP.
+      We have easy to understand contracts or sign yours. You simply order man power and keep the code & IP.
       `,
   },
   {
     icon: LawIcon,
     title: `Low overhead`,
     body: `
-      Don't manage staff, hire it on a timely basis like you would additional software and infrastructure.
+      Don't manage staff, but scale it up and down - like additional software and infrastructure.
       `,
   },
   {
     title: `Instant support`,
-    body: `We usually can present you an offer within one day a couple of engineers within a 3 days period.`,
+    body: `We usually can present you an offer within one day for up to 3 engineers ready to start asap.`,
     additionalInfo: null,
     link: null
   },
