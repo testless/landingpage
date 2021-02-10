@@ -3,6 +3,7 @@ import React from 'react';
 import image1 from 'src/images/pexels-photo-3184287.jpeg';
 import image2 from 'src/images/pexels-photo-3182812.jpeg';
 import image3 from 'src/images/pexels-photo-3182739.jpeg';
+import { CustomLink } from 'src/links';
 
 const title = [
   `Smart and agile software engineering`
@@ -16,7 +17,7 @@ const body = [
   You win, we win.
   `,
   `
-  We are known for delivering in time and budget with expertise in different types of software engineering such as cloud-native solutions within modern microservice architectures - either based on serverless, Docker, or Kubernetes.`
+  We are known for delivering in time and budget. Cloud-native solutions within modern microservice architectures - either based on serverless, Docker, or Kubernetes.`
 ];
 
 const ctaLabel = [
@@ -113,8 +114,8 @@ export const ContentBlock: React.FC<{
           </p>
         </div>
         <div>
-          <a
-            href="file:///"
+          <CustomLink
+            name="signup"
             aria-label=""
             className="inline-flex items-center font-semibold transition-colors duration-200 text-indigo-500 hover:text-indigo-500"
           >
@@ -126,7 +127,7 @@ export const ContentBlock: React.FC<{
             >
               <path d="M9.707,5.293l-5-5A1,1,0,0,0,3.293,1.707L7.586,6,3.293,10.293a1,1,0,1,0,1.414,1.414l5-5A1,1,0,0,0,9.707,5.293Z"></path>
             </svg>
-          </a>
+          </CustomLink>
         </div>
       </div>
       <ImageBlock />
