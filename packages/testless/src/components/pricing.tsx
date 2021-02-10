@@ -72,7 +72,7 @@ export const Pricing: React.FC<{
           </div>
         </div>
         <div className="text-center">
-          <div className="text-lg font-semibold">Instant &amp; audacious</div>
+          <div className="text-lg font-semibold">Instant</div>
           <div className="flex items-center justify-center mt-2">
             <div className="mr-1 text-5xl font-bold">200 €</div>
             <div className="text-gray-700">/ hour</div>
