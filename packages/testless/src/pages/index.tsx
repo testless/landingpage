@@ -4,12 +4,14 @@ import { Footer } from 'src/components/footer';
 import { Hero } from 'src/components/hero';
 import { MainNavigation } from 'src/components/main-navigation';
 import { Pricing } from 'src/components/pricing';
+import { SEO } from 'src/components/SEO';
 import { Steps } from 'src/components/steps';
 import { Teaser } from 'src/components/teaser';
 import { links } from 'src/links';
 
 const Index = () => (
   <React.Fragment>
+    <SEO />
     <MainNavigation  />
     <Hero variant="1" titleVariant={2} />
     <Teaser

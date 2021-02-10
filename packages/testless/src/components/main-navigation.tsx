@@ -1,6 +1,7 @@
 import React from 'react';
 import { CustomLink } from 'src/links';
 import { Logo } from './logo';
+import { SEO } from './SEO';
 
 const MenuSVG = () => (
   <svg viewBox="0 0 24 24" className="w-5 text-gray-600">
