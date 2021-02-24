@@ -7,8 +7,8 @@ const claim = [
   'A-level players hire A-level players.',
 ];
 
-export const Footer: React.FC<{ claimVariant?: 0 | 1 | 2 }> = ({
-  claimVariant = 0,
+export const Footer: React.FC<{ claim: string; }> = ({
+  claim
 }) => {
   return (
     <div className="bg-gray-100 px-4 pt-16 mx-auto w-full border-opacity-10md:px-24 lg:px-8">
@@ -16,7 +16,7 @@ export const Footer: React.FC<{ claimVariant?: 0 | 1 | 2 }> = ({
         <div className="md:max-w-md lg:col-span-2">
           <Logo />
           <div className="mt-4 lg:max-w-sm">
-            <p className="text-sm text-gray-900">{claim[claimVariant]}</p>
+            <p className="text-sm text-gray-900">{claim}</p>
           </div>
         </div>
       </div>

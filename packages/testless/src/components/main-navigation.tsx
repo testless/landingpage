@@ -1,40 +1,18 @@
 import React from 'react';
-import { CustomLink } from 'src/links';
+import { CustomLink, links } from 'src/links';
 import { Logo } from './logo';
 import { SEO } from './SEO';
 
-const MenuSVG = () => (
-  <svg viewBox="0 0 24 24" className="w-5 text-gray-600">
-    <path
-      fill="currentColor"
-      d="M23,13H1c-0.6,0-1-0.4-1-1s0.4-1,1-1h22c0.6,0,1,0.4,1,1S23.6,13,23,13z"
-    ></path>
-    <path
-      fill="currentColor"
-      d="M23,6H1C0.4,6,0,5.6,0,5s0.4-1,1-1h22c0.6,0,1,0.4,1,1S23.6,6,23,6z"
-    ></path>
-    <path
-      fill="currentColor"
-      d="M23,20H1c-0.6,0-1-0.4-1-1s0.4-1,1-1h22c0.6,0,1,0.4,1,1S23.6,20,23,20z"
-    ></path>
-  </svg>
-);
 
-export const MainNavigation: React.FC<{ variant?: '1' | '2' | '3' }> = ({
-  variant = '2',
+export const MainNavigation: React.FC<{ navs?: Array<keyof typeof links> }> = ({
+  navs = ['features', 'how_we_work', 'how_it_works'],
 }) => (
   <div className="px-4 py-5 mx-auto w-full md:px-24 lg:px-8 bg-gray-200">
     <div className="relative flex grid items-center max-w-6xl grid-cols-2 mx-auto lg:grid-cols-3">
       <ul className="flex items-center hidden space-x-8 lg:flex">
-        <li>
-          <CustomLink name="how_it_works" />
-        </li>
-        <li>
-          <CustomLink name="pricing" />
-        </li>
-        <li>
-          <CustomLink name="features" />
-        </li>
+        {navs.map(nav => (<li key={nav}>
+          <CustomLink name={nav} />
+        </li>))}
       </ul>
       <Logo />
       <ul className="flex items-center hidden ml-auto space-x-8 lg:flex">

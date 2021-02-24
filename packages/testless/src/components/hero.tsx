@@ -2,64 +2,24 @@ import React from 'react';
 
 import BgImage from 'src/images/pexels-photo-3228766.jpeg';
 import { CustomLink } from 'src/links';
+import { claim } from './claim';
 import { Logo } from './logo';
 
-import ERGO from 'src/images/clients/ergo.svg';
-import Douglas from 'src/images/clients/douglas.svg';
-import UKE from 'src/images/clients/uke.svg';
-import JIMDO from 'src/images/clients/jimdo.svg';
-import Freenet from 'src/images/clients/freenet.svg';
 
 const title = [
   `Content, translation and data collaboration in one click.`,
   `Collaborate on your content with ease.`,
-  `Tired of slow progress?`,
+  `Tired by many bugs?`,
   `Collaborate like never before.`,
   `A CMS build on top of the Github API.`,
   `The missing link between Github and your website.`,
   `Collaborate with Github.`,
 ];
 
-const claim = (
-  <p>
-    Outsource <b className="underline">full</b> projects or scale up your teams.
-    <br />
-    <b className="underline">Quick</b> to onboard,{' '}
-    <b className="underline">fast</b> up to speed.
-    <br />
-    The <b className="underline">best</b> talent is the most affordable one.
-  </p>
-);
-
-const trustSymbols = [
-  {
-    title: `Jimdo`,
-    icon: <JIMDO height={30} />,
-  },
-  {
-    title: `Universitätsklinikum Eppendorf`,
-    icon: <UKE height={45} />,
-  },
-  {
-    title: `ERGO AG`,
-    icon: <ERGO height={25} />,
-  },
-  {
-    title: `Douglas`,
-    icon: <Douglas height={20} />,
-  },
-  {
-    title: `Freenet`,
-    icon: <Freenet height={40} />,
-  },
-];
 
 export const Hero: React.FC<{
-  variant: '1' | '2';
   titleVariant: 0 | 1 | 2 | 3 | 4 | 5 | 6;
-}> = ({ variant, titleVariant }) =>
-<React.Fragment>{
-  variant === '2' ? (
+}> = ({ titleVariant }) => (
       <div className="relative w-full">
         <img
           src={BgImage}
@@ -177,62 +137,4 @@ export const Hero: React.FC<{
           </div>
         </div>
       </div>
-
-  ) : (
-    <div className="px-4 py-16 mx-auto w-full md:px-24 lg:px-8 lg:py-16 bg-gray-200">
-      <div className="max-w-xl sm:mx-auto lg:max-w-2xl">
-        <div className="flex flex-col mb-16 sm:text-center sm:mb-0">
-          <div className="max-w-xl mb-10 md:mx-auto sm:text-center lg:max-w-2xl md:mb-12">
-            <h2 className="max-w-lg mb-6 font-sans text-3xl font-bold leading-none tracking-tight text-gray-900 sm:text-4xl md:mx-auto">
-              <span className="relative inline-block">
-                <svg
-                  viewBox="0 0 52 24"
-                  fill="currentColor"
-                  className="absolute top-0 left-0 z-0 hidden w-32 -mt-8 -ml-20 text-blue-gray-100 lg:w-32 lg:-ml-28 lg:-mt-10 sm:block"
-                >
-                  <defs>
-                    <pattern
-                      id="e77df901-b9d7-4b9b-822e-16b2d410795b"
-                      x="0"
-                      y="0"
-                      width=".135"
-                      height=".30"
-                    >
-                      <circle cx="1" cy="1" r=".7"></circle>
-                    </pattern>
-                  </defs>
-                  <rect
-                    fill="url(#e77df901-b9d7-4b9b-822e-16b2d410795b)"
-                    width="52"
-                    height="24"
-                  ></rect>
-                </svg>
-              </span>
-              {title[titleVariant]}
-            </h2>
-            <p className="text-base text-gray-700 md:text-lg">{claim}</p>
-          </div>
-          <div>
-            <CustomLink name="signup"
-              className="inline-flex items-center justify-center h-12 px-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md bg-indigo-500 hover:bg-indigo-500 focus:shadow-outline focus:outline-none"
-            >
-              Hire us now
-            </CustomLink>
-          </div>
-        </div>
-      </div>
-    </div>
-  )}
-        <h3 className="text-center mt-20">Ask our clients:</h3>
-      <div className="mt-10 mr-20 ml-20 flex flex-row flex-wrap sm:mt-5  justify-around items-center">
-          {trustSymbols.map(({ title, icon }) => (
-            <span
-              className="mt-2 flex items-center text-xl text-white mr-3"
-              title={title}
-              aria-label={title}
-            >
-              {icon}
-            </span>
-          ))}
-        </div>
-    </React.Fragment>;
+);

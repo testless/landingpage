@@ -1,5 +1,6 @@
 import {
   FlameIcon,
+  GiftIcon,
   GitPullRequestIcon,
   HistoryIcon,
   LawIcon,
@@ -13,68 +14,62 @@ import { CustomLink } from 'src/links';
 
 const title = [
   `Build a modern website with no coding required.`,
-  `Software engineering as a service.`,
+  `Quality testing automation as a service`,
   `The most powerful CMS for your Github projects.`,
   `Build, host and collaborate on websites.`,
 ];
 
 const claim = [
-  `Simplicty is the ultimate sophistication. The simplest solution is often the most sophisticated one.`,
+  `Outsourcing QA automation`,
   `Get everything you need to build a website without any technical knowledge.`,
   `A full-featured, lightweight and extensible content management system built on top of the Github API.`,
 ];
 
 const boxes = [
+  // {
+  //   icon: OrganizationIcon,
+  //   title: `Rely on us`,
+  //   body: `
+  //   We only support projects where we can truly build value and commit long term.
+  // `,
+  // },
+
   {
-    icon: OrganizationIcon,
-    title: `Rely on us`,
+    icon: GiftIcon,
+    title: `Human readable & writeable.`,
     body: `
-    We only support projects where we can truly build value and commit long term.
-  `,
+      We use a specific human friendly language based on cucumber to write tests like user stories. No coding required to maintain tests. Easy to onboard.
+    `
   },
   {
     icon: HistoryIcon,
-    title: `Save time`,
+    title: `Save precious dev time.`,
     body: `
-      Don't search for hours when you need an engineer for two weeks or a smaller subproject.
+      Deliver tickets faster by relying on our task force. We focus on writing browser tests, you focus on delivering value.
     `,
   },
   {
     icon: FlameIcon,
-    title: `Battle tested engineers`,
+    title: `Less emergencies, instant alerts.`,
     body: `
-    Our engineers have worked in highly regulated industries and fast scaling startups.
-  `,
-  },
-  {
-    icon: SyncIcon,
-    title: `Iterate and scale`,
-    body: `
-      Scaling teams up and down with easy to onboard engineers makes you invincible.
-    `
+      A high test coverage makes you notice bugs before they go to production. Cron jobs & alerting let you notice issues real time.
+    `,
   },
   {
     icon: RocketIcon,
-    title: `Ship in time`,
-    body: `Before not delivering on a deadline, staff up your teams instantly.`,
+    title: `Less bug tickets, ship faster.`,
+    body: `If you have to manage less bug tickets, you can focus on creating value. You gain velocity and can focus on making customers happy.`,
   },
   {
     icon: VersionsIcon,
-    title: `Less paperwork`,
+    title: `Outsource with low overhead`,
     body: `
-      We have easy to understand contracts or sign yours. You simply order man power and keep the code & IP.
-      `,
-  },
-  {
-    icon: LawIcon,
-    title: `Low overhead`,
-    body: `
-      Don't manage staff, but scale it up and down - like additional software and infrastructure.
-      `,
+      Send us user stories. We write the tests for you. Disable and enable test. Direct communication with QA preferred.
+    `
   },
   {
     title: `Instant support`,
-    body: `We usually can present you an offer within one day for up to 3 engineers ready to start asap.`,
+    body: `Instant support is available in emergencies. Our engineers are battle tested and help you diagnose errors.`,
     additionalInfo: null,
     link: null
   },

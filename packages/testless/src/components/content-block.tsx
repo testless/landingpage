@@ -4,10 +4,10 @@ import image1 from 'src/images/pexels-photo-3184287.jpeg';
 import image2 from 'src/images/pexels-photo-3182812.jpeg';
 import image3 from 'src/images/pexels-photo-3182739.jpeg';
 import { CustomLink } from 'src/links';
+import { IconProps, NorthStarIcon } from '@primer/octicons-react';
+import { TitleBlock } from './TitleBlock';
 
-const title = [
-  `Smart and agile software engineering`
-];
+const title = [];
 
 const body = [
   `
@@ -16,15 +16,9 @@ const body = [
   In time and in budget. Prioritized according to Pareto. Consulting where necessary.
   You win, we win.
   `,
-  `
-  We are known for delivering in time and budget. Cloud-native solutions within modern microservice architectures - either based on serverless, Docker, or Kubernetes.`
 ];
 
-const ctaLabel = [
-  `Contact us now`,
-  `Hire us now`,
-  `Let's talk`,
-];
+const ctaLabel = [`Contact us now`, `Hire us now`, `Let's talk`];
 
 const ImageBlock = () => (
   <div className="flex items-center justify-center -mx-4 lg:pl-8">
@@ -51,75 +45,28 @@ const ImageBlock = () => (
 );
 
 export const ContentBlock: React.FC<{
-  titleVariant: 0 | 1 | 2;
-  bodyVariant: 0 | 1 | 2;
-  ctaLabelVariant: 0 | 1 | 2;
+  title: string;
+  body: string;
+  ctaLabel: string;
+  Icon: React.FC<IconProps>;
   id?: string;
-}> = ({ titleVariant, bodyVariant, ctaLabelVariant, id }) => (
+}> = ({ title, body, ctaLabel, Icon, id }) => (
   <div
     id={id}
-    className="px-4 py-16 mx-auto w-full md:px-24 lg:px-8 lg:py-20 bg-white"
+    className="px-4 py-16 mx-auto w-full md:px-24 lg:px-8 lg:py-20 bg-white "
   >
     <div className="grid gap-10 lg:grid-cols-2 max-w-6xl mx-auto">
       <div className="flex flex-col justify-center md:pr-8 xl:pr-0 lg:max-w-lg">
-        <div className="flex items-center justify-center w-16 h-16 mb-4 rounded-full bg-indigo-100">
-          <svg viewBox="0 0 24 24" className="text-indigo-500 w-7 h-7">
-            <polyline
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-miterlimit="10"
-              points=" 8,5 8,1 16,1 16,5"
-              stroke-linejoin="round"
-            ></polyline>
-            <polyline
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-miterlimit="10"
-              points="9,15 1,15 1,5 23,5 23,15 15,15"
-              stroke-linejoin="round"
-            ></polyline>
-            <polyline
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-miterlimit="10"
-              points="22,18 22,23 2,23 2,18"
-              stroke-linejoin="round"
-            ></polyline>
-            <rect
-              x="9"
-              y="13"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-miterlimit="10"
-              width="6"
-              height="4"
-              stroke-linejoin="round"
-            ></rect>
-          </svg>
-        </div>
-        <div className="max-w-xl mb-6">
-          <h2 className="max-w-lg mb-6 font-sans text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl sm:leading-none">
-            {title[titleVariant]}
-          </h2>
-          <p className="text-base text-gray-700 md:text-lg">
-            {body[bodyVariant]}
-          </p>
-        </div>
+        <TitleBlock title={title} Icon={Icon}>
+          <p className="text-base text-gray-700 md:text-lg">{body}</p>
+        </TitleBlock>
         <div>
           <CustomLink
             name="signup"
             aria-label=""
             className="inline-flex items-center font-semibold transition-colors duration-200 text-indigo-500 hover:text-indigo-500"
           >
-            {ctaLabel[ctaLabelVariant]}
+            {ctaLabel}
             <svg
               fill="currentColor"
               viewBox="0 0 12 12"

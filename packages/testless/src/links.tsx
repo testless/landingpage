@@ -28,15 +28,15 @@ export const links = {
   },
   signup: {
     name: `Let's chat`,
-    href: `https://calendly.com/testless/30min`,
+    href: `https://calendly.com/testless/15min`,
   },
   login: {
     name: `Login`,
     href: `https://cms.gitlify.com/`,
     icon: MarkGithubIcon,
   },
-  pricing: {
-    name: `Pricing`,
+  how_we_work: {
+    name: `How we work`,
     href: '/',
     id: `pricing`,
   },
