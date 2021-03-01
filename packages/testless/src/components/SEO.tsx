@@ -52,6 +52,10 @@ export const SEO: React.FC<{ description?: string; lang?: string; meta?: any[]; 
           content: `website`,
         },
         {
+          property: `og:image`,
+          content: `https://www.testless.com/og-image.png`,
+        },
+        {
           name: `twitter:card`,
           content: `summary`,
         },
@@ -68,6 +72,24 @@ export const SEO: React.FC<{ description?: string; lang?: string; meta?: any[]; 
           content: metaDescription,
         },
       ].concat(meta)}
-    />
+    >
+
+      <script type="application/ld+json">
+          {`
+              {
+                "@context": "https://schema.org",
+                "@type": "Organization",
+                "url": "https://www.testless.com",
+                "name": "testless GmbH",
+                "contactPoint": {
+                  "@type": "ContactPoint",
+                  "telephone": "+49 176 3434 0377",
+                  "email": "sales@testless.com",
+                  "contactType": "Sales"
+                }
+              }
+            `}
+  </script>
+    </Helmet>
   );
 }

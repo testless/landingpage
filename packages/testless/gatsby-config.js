@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: 'Testless',
-    description: 'Hire top IT talent',
+    description: 'Outsource your QA',
     author: 'Testless GmbH',
   },
   plugins: [
