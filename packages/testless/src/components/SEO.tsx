@@ -53,7 +53,7 @@ export const SEO: React.FC<{ description?: string; lang?: string; meta?: any[]; 
         },
         {
           property: `og:image`,
-          content: `https://www.testless.com/og-image.png`,
+          content: `https://testless.com/og-image.png`,
         },
         {
           name: `twitter:card`,
